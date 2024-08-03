@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Darker background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.options, .size-options {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #BB86FC; /* Accent color for labels */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #BB86FC;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    background-color: #BB86FC;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3700B3;
+}
+
+#qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#download-btn {
+    display: none;
+    background-color: #03DAC6;
+    color: #121212;
+}
+
+#download-btn:hover {
+    background-color: #018786;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #BB86FC;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1em;
+}

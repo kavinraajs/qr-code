@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator with Animated Background</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        
+        <div class="options">
+            <label><input type="radio" name="type" value="text" checked> Text</label>
+            <label><input type="radio" name="type" value="url"> URL</label>
+        </div>
+        
+        <input type="text" id="text-input" placeholder="Enter text">
+        <button id="generate-btn">Generate QR Code</button>
+        <button id="clear-btn">Clear</button>
+
+        <div class="size-options">
+            <label for="size-select">Size:</label>
+            <select id="size-select">
+                <option value="128">128x128</option>
+                <option value="256">256x256</option>
+                <option value="512">512x512</option>
+            </select>
+        </div>
+        
+        <div id="qrcode"></div>
+        <button id="download-btn" style="display:none;">Download QR Code</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
